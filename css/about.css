@@ -1,0 +1,1091 @@
+/* =========================================================
+                ABOUT PAGE CSS
+                PART 1
+========================================================= */
+
+/* ==========================================
+            ABOUT HERO
+========================================== */
+
+.about-hero{
+
+padding:170px 8% 100px;
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:420px 1fr;
+
+align-items:center;
+
+gap:80px;
+
+}
+
+.about-image{
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.about-content{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.about-content .hello{
+
+color:var(--primary);
+
+font-size:18px;
+
+font-weight:600;
+
+margin-bottom:15px;
+
+letter-spacing:1px;
+
+}
+
+.about-content h1{
+
+font-size:70px;
+
+line-height:1.1;
+
+font-weight:800;
+
+margin-bottom:25px;
+
+}
+
+.about-content h1 span{
+
+color:var(--primary);
+
+display:block;
+
+}
+
+.about-text{
+
+font-size:18px;
+
+line-height:34px;
+
+color:var(--text-light);
+
+max-width:720px;
+
+margin-bottom:40px;
+
+}
+
+/* ==========================================
+            INFO CARDS
+========================================== */
+
+.about-info{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+.about-info div{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+padding:18px;
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:18px;
+
+backdrop-filter:blur(20px);
+
+transition:.35s;
+
+font-weight:500;
+
+}
+
+.about-info div:hover{
+
+transform:translateY(-6px);
+
+border-color:var(--primary);
+
+}
+
+.about-info i{
+
+font-size:20px;
+
+color:var(--primary);
+
+}
+
+/* ==========================================
+            PROFILE CARD
+========================================== */
+
+.about-image .profile-card{
+
+width:420px;
+
+height:420px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+animation:floatAnimation 5s ease-in-out infinite;
+
+}
+
+.about-image .profile-border{
+
+width:340px;
+
+height:340px;
+
+padding:8px;
+
+border-radius:50%;
+
+background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+box-shadow:0 20px 60px rgba(37,99,235,.35);
+
+overflow:hidden;
+
+}
+
+.about-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+border-radius:50%;
+
+}
+
+/* ==========================================
+            COMMON SECTION
+========================================== */
+
+.journey,
+.education,
+.about-skills,
+.about-vision{
+
+padding:110px 8%;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:800;
+
+margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+color:var(--text-light);
+
+margin-bottom:60px;
+
+}
+/* =========================================================
+                JOURNEY SECTION
+========================================================= */
+
+.journey-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.journey-card{
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:24px;
+
+padding:35px;
+
+text-align:center;
+
+backdrop-filter:blur(20px);
+
+transition:.35s;
+
+box-shadow:var(--shadow);
+
+}
+
+.journey-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+}
+
+.journey-card i{
+
+font-size:50px;
+
+color:var(--primary);
+
+margin-bottom:22px;
+
+}
+
+.journey-card h3{
+
+font-size:24px;
+
+margin-bottom:18px;
+
+font-weight:700;
+
+}
+
+.journey-card p{
+
+font-size:16px;
+
+line-height:30px;
+
+color:var(--text-light);
+
+}
+
+/* =========================================================
+                EDUCATION
+========================================================= */
+
+.education-timeline{
+
+position:relative;
+
+display:flex;
+
+flex-direction:column;
+
+gap:35px;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.education-timeline::before{
+
+content:"";
+
+position:absolute;
+
+left:32px;
+
+top:0;
+
+bottom:0;
+
+width:4px;
+
+background:linear-gradient(
+180deg,
+#2563EB,
+#7C3AED
+);
+
+border-radius:10px;
+
+}
+
+.education-card{
+
+position:relative;
+
+margin-left:80px;
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:24px;
+
+padding:30px;
+
+backdrop-filter:blur(20px);
+
+transition:.35s;
+
+box-shadow:var(--shadow);
+
+}
+
+.education-card:hover{
+
+transform:translateX(8px);
+
+border-color:var(--primary);
+
+}
+
+.education-card::before{
+
+content:"";
+
+position:absolute;
+
+left:-60px;
+
+top:38px;
+
+width:20px;
+
+height:20px;
+
+border-radius:50%;
+
+background:var(--primary);
+
+border:5px solid var(--bg);
+
+box-shadow:0 0 0 4px rgba(37,99,235,.25);
+
+}
+
+.year{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:var(--primary);
+
+color:#fff;
+
+border-radius:50px;
+
+font-size:14px;
+
+font-weight:600;
+
+margin-bottom:18px;
+
+}
+
+.education-card h3{
+
+font-size:24px;
+
+margin-bottom:8px;
+
+font-weight:700;
+
+}
+
+.education-card h4{
+
+font-size:18px;
+
+margin-bottom:15px;
+
+color:var(--text-light);
+
+font-weight:500;
+
+}
+
+.education-card p{
+
+font-size:16px;
+
+line-height:30px;
+
+color:var(--text-light);
+
+}
+
+/* =========================================================
+                SECTION ANIMATION
+========================================================= */
+
+.journey-card,
+.education-card{
+
+animation:fadeUp .8s ease;
+
+}
+/* =========================================================
+                ABOUT SKILLS
+========================================================= */
+
+.about-skills .skills-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.about-skills .skill-card{
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:22px;
+
+padding:35px;
+
+text-align:center;
+
+backdrop-filter:blur(20px);
+
+transition:.35s;
+
+box-shadow:var(--shadow);
+
+}
+
+.about-skills .skill-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+background:rgba(37,99,235,.08);
+
+}
+
+.about-skills .skill-card i{
+
+font-size:48px;
+
+margin-bottom:18px;
+
+color:var(--primary);
+
+}
+
+.about-skills .skill-card h3{
+
+font-size:22px;
+
+font-weight:700;
+
+}
+
+/* =========================================================
+                ABOUT VISION
+========================================================= */
+
+.about-vision .journey-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.about-vision .journey-card{
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:24px;
+
+padding:35px;
+
+text-align:center;
+
+transition:.35s;
+
+backdrop-filter:blur(20px);
+
+box-shadow:var(--shadow);
+
+}
+
+.about-vision .journey-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+}
+
+.about-vision .journey-card i{
+
+font-size:48px;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+.about-vision .journey-card h3{
+
+font-size:24px;
+
+margin-bottom:18px;
+
+font-weight:700;
+
+}
+
+.about-vision .journey-card p{
+
+line-height:30px;
+
+color:var(--text-light);
+
+}
+
+/* =========================================================
+                CTA
+========================================================= */
+
+.cta{
+
+padding:110px 8%;
+
+}
+
+.cta-box{
+
+padding:70px 50px;
+
+text-align:center;
+
+border-radius:30px;
+
+background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+box-shadow:0 25px 60px rgba(37,99,235,.35);
+
+}
+
+.cta-box h2{
+
+font-size:46px;
+
+color:#fff;
+
+margin-bottom:20px;
+
+font-weight:800;
+
+}
+
+.cta-box p{
+
+max-width:760px;
+
+margin:auto;
+
+font-size:18px;
+
+line-height:34px;
+
+color:rgba(255,255,255,.92);
+
+margin-bottom:40px;
+
+}
+
+.cta-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.cta-buttons .primary-btn{
+
+background:#fff;
+
+color:#2563EB;
+
+}
+
+.cta-buttons .secondary-btn{
+
+border:2px solid #fff;
+
+color:#fff;
+
+}
+
+.cta-buttons .secondary-btn:hover{
+
+background:#fff;
+
+color:#2563EB;
+
+}
+
+/* =========================================================
+                PAGE ANIMATION
+========================================================= */
+
+.about-hero,
+.journey,
+.education,
+.about-skills,
+.about-vision,
+.cta{
+
+animation:fadeUp .8s ease;
+
+}
+
+.about-image{
+
+animation:floatAnimation 5s ease-in-out infinite;
+
+}
+/* =========================================================
+                ABOUT RESPONSIVE
+                PART 4 (FINAL)
+========================================================= */
+
+/* ==========================
+        Laptop
+========================== */
+
+@media (max-width:1200px){
+
+.about-grid{
+
+grid-template-columns:350px 1fr;
+
+gap:50px;
+
+}
+
+.about-content h1{
+
+font-size:56px;
+
+}
+
+.about-image .profile-card{
+
+width:350px;
+
+height:350px;
+
+}
+
+.about-image .profile-border{
+
+width:280px;
+
+height:280px;
+
+}
+
+.about-info{
+
+grid-template-columns:1fr;
+
+}
+
+.journey-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.about-skills .skills-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.about-vision .journey-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==========================
+        Tablet
+========================== */
+
+@media (max-width:992px){
+
+.about-hero{
+
+padding:140px 6% 80px;
+
+}
+
+.about-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+gap:50px;
+
+}
+
+.about-content{
+
+align-items:center;
+
+}
+
+.about-text{
+
+max-width:100%;
+
+}
+
+.about-info{
+
+grid-template-columns:1fr;
+
+width:100%;
+
+}
+
+.journey-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.about-skills .skills-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.about-vision .journey-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.education-timeline::before{
+
+left:20px;
+
+}
+
+.education-card{
+
+margin-left:55px;
+
+}
+
+.education-card::before{
+
+left:-44px;
+
+}
+
+}
+
+/* ==========================
+        Mobile
+========================== */
+
+@media (max-width:768px){
+
+.about-hero{
+
+padding:120px 20px 60px;
+
+}
+
+.about-content h1{
+
+font-size:42px;
+
+}
+
+.about-text{
+
+font-size:16px;
+
+line-height:30px;
+
+}
+
+.about-image .profile-card{
+
+width:280px;
+
+height:280px;
+
+}
+
+.about-image .profile-border{
+
+width:220px;
+
+height:220px;
+
+}
+
+.section-title{
+
+font-size:34px;
+
+}
+
+.section-subtitle{
+
+font-size:16px;
+
+margin-bottom:40px;
+
+}
+
+.education-card{
+
+padding:24px;
+
+}
+
+.education-card h3{
+
+font-size:20px;
+
+}
+
+.education-card h4{
+
+font-size:16px;
+
+}
+
+.education-card p{
+
+font-size:15px;
+
+line-height:28px;
+
+}
+
+.about-skills .skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.cta-box{
+
+padding:40px 25px;
+
+}
+
+.cta-box h2{
+
+font-size:30px;
+
+}
+
+.cta-box p{
+
+font-size:16px;
+
+line-height:28px;
+
+}
+
+}
+
+/* ==========================
+      Small Mobile
+========================== */
+
+@media (max-width:480px){
+
+.about-content h1{
+
+font-size:34px;
+
+}
+
+.about-image .profile-card{
+
+width:240px;
+
+height:240px;
+
+}
+
+.about-image .profile-border{
+
+width:190px;
+
+height:190px;
+
+}
+
+.about-text{
+
+font-size:15px;
+
+}
+
+.about-info div{
+
+font-size:14px;
+
+padding:15px;
+
+}
+
+.journey-card{
+
+padding:25px;
+
+}
+
+.education-card{
+
+padding:20px;
+
+}
+
+.cta-box{
+
+padding:30px 18px;
+
+}
+
+.cta-box h2{
+
+font-size:25px;
+
+}
+
+footer{
+
+text-align:center;
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+gap:35px;
+
+}
+
+.footer-social .social-icons{
+
+justify-content:center;
+
+}
+
+.footer-links ul{
+
+align-items:center;
+
+}
+
+}
+
+/* ==========================
+      Large Screens
+========================== */
+
+@media (min-width:1600px){
+
+.about-grid{
+
+max-width:1500px;
+
+margin:auto;
+
+}
+
+.about-content h1{
+
+font-size:82px;
+
+}
+
+.about-text{
+
+font-size:20px;
+
+line-height:36px;
+
+}
+
+}
