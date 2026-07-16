@@ -1561,6 +1561,25 @@ border:1px solid var(--border);
 backdrop-filter:blur(18px);
 
 }
+.project-buttons .primary-btn{
+
+background:#2563EB;
+
+color:#fff !important;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+min-width:160px;
+
+min-height:52px;
+
+font-weight:600;
+
+}
 
 /* =========================================================
                 END OF STYLE.CSS
