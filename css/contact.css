@@ -1,0 +1,901 @@
+/* =========================================================
+                CONTACT PAGE CSS
+                PART 1
+========================================================= */
+
+/* ==========================================
+            CONTACT HERO
+========================================== */
+
+.contact-hero{
+
+padding:170px 8% 100px;
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.contact-hero .container{
+
+max-width:950px;
+
+margin:auto;
+
+}
+
+.hero-tag{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(37,99,235,.10);
+
+border:1px solid var(--border);
+
+border-radius:50px;
+
+color:var(--primary);
+
+font-weight:600;
+
+margin-bottom:25px;
+
+}
+
+.contact-hero h1{
+
+font-size:72px;
+
+font-weight:800;
+
+line-height:1.1;
+
+margin-bottom:25px;
+
+}
+
+.contact-hero h1 span{
+
+display:block;
+
+color:var(--primary);
+
+}
+
+.hero-text{
+
+max-width:760px;
+
+margin:auto;
+
+font-size:19px;
+
+line-height:34px;
+
+color:var(--text-light);
+
+}
+
+/* ==========================================
+            CONTACT SECTION
+========================================== */
+
+.contact-section{
+
+padding:110px 8%;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:800;
+
+margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+color:var(--text-light);
+
+margin-bottom:70px;
+
+max-width:700px;
+
+margin-left:auto;
+
+margin-right:auto;
+
+}
+
+/* ==========================================
+            CONTACT GRID
+========================================== */
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+align-items:stretch;
+
+}
+/* =========================================================
+                CONTACT CARDS
+                PART 2
+========================================================= */
+
+.contact-card{
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:24px;
+
+padding:35px 28px;
+
+text-align:center;
+
+backdrop-filter:blur(20px);
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:space-between;
+
+gap:18px;
+
+}
+
+.contact-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+box-shadow:0 20px 50px rgba(37,99,235,.18);
+
+}
+
+/* ==========================================
+                ICON
+========================================== */
+
+.contact-card i{
+
+font-size:52px;
+
+color:var(--primary);
+
+margin-bottom:10px;
+
+transition:.35s;
+
+}
+
+.contact-card:hover i{
+
+transform:scale(1.1) rotate(5deg);
+
+}
+
+/* ==========================================
+                TITLE
+========================================== */
+
+.contact-card h3{
+
+font-size:24px;
+
+font-weight:700;
+
+margin-bottom:10px;
+
+}
+
+/* ==========================================
+                TEXT
+========================================== */
+
+.contact-card p{
+
+font-size:16px;
+
+line-height:28px;
+
+color:var(--text-light);
+
+word-break:break-word;
+
+}
+
+/* ==========================================
+            ACTION BUTTON
+========================================== */
+
+.contact-card a{
+
+display:inline-flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:14px 24px;
+
+margin-top:10px;
+
+border-radius:50px;
+
+background:var(--primary);
+
+color:#fff;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.contact-card a:hover{
+
+transform:translateY(-4px);
+
+background:#1d4ed8;
+
+}
+
+/* ==========================================
+            SMALL EFFECT
+========================================== */
+
+.contact-card:hover h3{
+
+color:var(--primary);
+
+}
+/* =========================================================
+                CONTACT CTA
+                PART 3
+========================================================= */
+
+.cta{
+
+padding:110px 8%;
+
+}
+
+.cta-box{
+
+position:relative;
+
+padding:70px 50px;
+
+text-align:center;
+
+border-radius:30px;
+
+background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+box-shadow:0 25px 60px rgba(37,99,235,.35);
+
+overflow:hidden;
+
+}
+
+.cta-box::before{
+
+content:"";
+
+position:absolute;
+
+top:-100px;
+
+right:-100px;
+
+width:260px;
+
+height:260px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+}
+
+.cta-box h2{
+
+position:relative;
+
+z-index:2;
+
+font-size:46px;
+
+font-weight:800;
+
+color:#fff;
+
+margin-bottom:20px;
+
+}
+
+.cta-box p{
+
+position:relative;
+
+z-index:2;
+
+max-width:760px;
+
+margin:auto;
+
+font-size:18px;
+
+line-height:34px;
+
+color:rgba(255,255,255,.92);
+
+margin-bottom:40px;
+
+}
+
+.cta-buttons{
+
+position:relative;
+
+z-index:2;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.cta-buttons .primary-btn{
+
+background:#fff;
+
+color:#2563EB;
+
+}
+
+.cta-buttons .primary-btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+.cta-buttons .secondary-btn{
+
+background:transparent;
+
+border:2px solid #fff;
+
+color:#fff;
+
+}
+
+.cta-buttons .secondary-btn:hover{
+
+background:#fff;
+
+color:#2563EB;
+
+}
+
+/* =========================================================
+                    FOOTER
+========================================================= */
+
+footer{
+
+padding:45px 8%;
+
+border-top:1px solid var(--border);
+
+background:rgba(255,255,255,.02);
+
+backdrop-filter:blur(18px);
+
+}
+
+.footer-container{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:40px;
+
+align-items:flex-start;
+
+}
+
+.footer-about h2{
+
+font-size:30px;
+
+margin-bottom:15px;
+
+}
+
+.footer-about p{
+
+line-height:30px;
+
+color:var(--text-light);
+
+}
+
+.footer-links h3,
+.footer-social h3{
+
+margin-bottom:18px;
+
+font-size:22px;
+
+}
+
+.footer-links ul{
+
+list-style:none;
+
+padding:0;
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.footer-links a{
+
+text-decoration:none;
+
+color:var(--text-light);
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:var(--primary);
+
+}
+
+.footer-social .social-icons{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.footer-social .social-icons a{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:46px;
+
+height:46px;
+
+border-radius:50%;
+
+background:rgba(37,99,235,.12);
+
+color:var(--primary);
+
+font-size:20px;
+
+transition:.35s;
+
+}
+
+.footer-social .social-icons a:hover{
+
+background:var(--primary);
+
+color:#fff;
+
+transform:translateY(-5px);
+
+}
+
+.footer-bottom{
+
+margin-top:40px;
+
+padding-top:25px;
+
+text-align:center;
+
+border-top:1px solid var(--border);
+
+}
+
+.footer-bottom p{
+
+color:var(--text-light);
+
+font-size:15px;
+
+}
+
+/* =========================================================
+                PAGE EFFECTS
+========================================================= */
+
+.contact-hero,
+.contact-section,
+.cta{
+
+animation:fadeUp .8s ease;
+
+}
+
+.contact-card{
+
+animation:fadeUp .9s ease;
+
+}
+/* =========================================================
+            CONTACT RESPONSIVE
+            PART 4 (FINAL)
+========================================================= */
+
+/* ==========================
+        Laptop
+========================== */
+
+@media (max-width:1200px){
+
+.contact-hero h1{
+
+font-size:58px;
+
+}
+
+.contact-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==========================
+        Tablet
+========================== */
+
+@media (max-width:992px){
+
+.contact-hero{
+
+padding:140px 6% 80px;
+
+}
+
+.contact-hero h1{
+
+font-size:50px;
+
+}
+
+.hero-text{
+
+font-size:17px;
+
+line-height:30px;
+
+}
+
+.contact-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px;
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.footer-social .social-icons{
+
+justify-content:center;
+
+}
+
+.footer-links ul{
+
+align-items:center;
+
+}
+
+}
+
+/* ==========================
+        Mobile
+========================== */
+
+@media (max-width:768px){
+
+.contact-hero{
+
+padding:120px 20px 60px;
+
+min-height:auto;
+
+}
+
+.contact-hero h1{
+
+font-size:40px;
+
+}
+
+.hero-text{
+
+font-size:16px;
+
+line-height:28px;
+
+}
+
+.contact-section{
+
+padding:80px 20px;
+
+}
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+gap:22px;
+
+}
+
+.contact-card{
+
+padding:28px 22px;
+
+}
+
+.contact-card i{
+
+font-size:44px;
+
+}
+
+.contact-card h3{
+
+font-size:22px;
+
+}
+
+.contact-card p{
+
+font-size:15px;
+
+}
+
+.contact-card a{
+
+width:100%;
+
+}
+
+.cta{
+
+padding:80px 20px;
+
+}
+
+.cta-box{
+
+padding:45px 25px;
+
+}
+
+.cta-box h2{
+
+font-size:30px;
+
+}
+
+.cta-box p{
+
+font-size:16px;
+
+line-height:28px;
+
+}
+
+.cta-buttons{
+
+flex-direction:column;
+
+}
+
+.cta-buttons .primary-btn,
+
+.cta-buttons .secondary-btn{
+
+width:100%;
+
+}
+
+}
+
+/* ==========================
+      Small Mobile
+========================== */
+
+@media (max-width:480px){
+
+.contact-hero h1{
+
+font-size:34px;
+
+}
+
+.hero-tag{
+
+font-size:14px;
+
+padding:8px 18px;
+
+}
+
+.hero-text{
+
+font-size:15px;
+
+}
+
+.contact-card{
+
+padding:22px 18px;
+
+}
+
+.contact-card i{
+
+font-size:40px;
+
+}
+
+.contact-card h3{
+
+font-size:20px;
+
+}
+
+.contact-card p{
+
+font-size:14px;
+
+line-height:24px;
+
+}
+
+.cta-box{
+
+padding:30px 18px;
+
+}
+
+.cta-box h2{
+
+font-size:24px;
+
+}
+
+.footer{
+
+padding:30px 20px;
+
+}
+
+.footer-about h2{
+
+font-size:24px;
+
+}
+
+.footer-links h3,
+
+.footer-social h3{
+
+font-size:20px;
+
+}
+
+}
+
+/* ==========================
+      Large Screens
+========================== */
+
+@media (min-width:1600px){
+
+.contact-hero .container{
+
+max-width:1400px;
+
+}
+
+.contact-hero h1{
+
+font-size:88px;
+
+}
+
+.hero-text{
+
+font-size:21px;
+
+line-height:38px;
+
+}
+
+.contact-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+gap:40px;
+
+}
+
+.contact-card{
+
+padding:45px 35px;
+
+}
+
+}
