@@ -1,15 +1,13 @@
 /* ==========================================================
-                    CERTIFICATES
-                    PART 1
+            CERTIFICATES V2
+            PART 1
 ========================================================== */
 
-/* ===========================
-        HERO
-=========================== */
+/* ---------- HERO ---------- */
 
 .certificate-hero{
 
-padding:170px 8% 110px;
+padding:150px 0 90px;
 
 text-align:center;
 
@@ -17,7 +15,7 @@ text-align:center;
 
 .certificate-hero .container{
 
-max-width:1100px;
+width:min(92%,1200px);
 
 margin:auto;
 
@@ -31,31 +29,29 @@ align-items:center;
 
 gap:10px;
 
-padding:10px 24px;
+padding:10px 22px;
 
 border-radius:50px;
 
-background:rgba(37,99,235,.10);
+background:rgba(59,130,246,.12);
 
-border:1px solid var(--border);
+border:1px solid rgba(59,130,246,.25);
 
 color:var(--primary);
 
 font-weight:600;
 
-margin-bottom:28px;
+margin-bottom:25px;
 
 }
 
 .certificate-hero h1{
 
-font-size:68px;
+font-size:clamp(2.5rem,5vw,4.4rem);
 
 font-weight:800;
 
-letter-spacing:-2px;
-
-margin-bottom:25px;
+margin-bottom:18px;
 
 line-height:1.1;
 
@@ -67,17 +63,15 @@ max-width:760px;
 
 margin:auto;
 
-font-size:20px;
+font-size:18px;
 
-line-height:36px;
+line-height:1.9;
 
 color:var(--text-light);
 
 }
 
-/* ===========================
-      STATS
-=========================== */
+/* ---------- STATS ---------- */
 
 .certificate-stats{
 
@@ -87,25 +81,23 @@ grid-template-columns:repeat(4,1fr);
 
 gap:25px;
 
-margin-top:70px;
+margin-top:60px;
 
 }
 
 .certificate-stats div{
 
-padding:30px;
+padding:28px;
 
 background:var(--glass);
 
 border:1px solid var(--border);
 
-border-radius:24px;
+border-radius:22px;
 
 backdrop-filter:blur(18px);
 
 transition:.35s;
-
-box-shadow:var(--shadow);
 
 }
 
@@ -119,87 +111,87 @@ border-color:var(--primary);
 
 .certificate-stats h2{
 
-font-size:36px;
+font-size:38px;
 
 color:var(--primary);
 
-margin-bottom:10px;
+margin-bottom:8px;
 
 }
 
 .certificate-stats p{
 
-font-size:15px;
+margin:0;
 
 color:var(--text-light);
 
-margin:0;
-
 }
 
-/* ===========================
-      SECTION TITLE
-=========================== */
+/* ---------- SECTION ---------- */
 
 .certificate-gallery{
 
-padding:30px 8% 100px;
+padding:30px 0 100px;
 
 }
 
 .section-heading{
 
+width:min(92%,900px);
+
+margin:auto;
+
 text-align:center;
 
-max-width:850px;
-
-margin:auto auto 70px;
+margin-bottom:60px;
 
 }
 
 .section-heading h2{
 
-font-size:52px;
+font-size:clamp(2rem,4vw,3.4rem);
 
-margin-bottom:20px;
+margin-bottom:18px;
 
 }
 
 .section-heading p{
 
-font-size:18px;
+font-size:17px;
 
-line-height:34px;
+line-height:1.9;
 
 color:var(--text-light);
 
 }
-/* ==========================================================
-                CERTIFICATE CARDS
-                    PART 2
-========================================================== */
 
-/* ===========================
-        GRID
-=========================== */
+/* ---------- GRID ---------- */
 
 .certificate-grid{
 
+width:min(92%,1200px);
+
+margin:auto;
+
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+grid-template-columns:1fr;
 
-gap:35px;
-
-align-items:stretch;
+gap:45px;
 
 }
 
-/* ===========================
-        CARD
-=========================== */
+/* ---------- CARD ---------- */
 
 .certificate-card{
+
+display:grid;
+
+grid-template-columns:420px 1fr;
+
+gap:35px;
+
+padding:30px;
 
 background:var(--glass);
 
@@ -207,45 +199,45 @@ border:1px solid var(--border);
 
 border-radius:28px;
 
-overflow:hidden;
-
 backdrop-filter:blur(18px);
 
 box-shadow:var(--shadow);
 
-transition:.4s;
+transition:.35s;
 
-display:flex;
+align-items:center;
 
-flex-direction:column;
-
-height:100%;
+overflow:hidden;
 
 }
 
 .certificate-card:hover{
 
-transform:translateY(-12px);
+transform:translateY(-8px);
 
 border-color:var(--primary);
 
-box-shadow:0 25px 60px rgba(37,99,235,.15);
-
 }
 
-/* ===========================
-        IMAGE
-=========================== */
+/* ---------- IMAGE ---------- */
 
 .certificate-image{
 
 position:relative;
 
+background:#ffffff;
+
+border-radius:18px;
+
+padding:18px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
 overflow:hidden;
-
-height:260px;
-
-background:#f5f7fb;
 
 }
 
@@ -253,63 +245,55 @@ background:#f5f7fb;
 
 width:100%;
 
-height:100%;
+height:auto;
 
-object-fit:cover;
+display:block;
 
-transition:.5s;
+border-radius:10px;
 
-cursor:pointer;
+transition:.4s;
 
 }
 
 .certificate-card:hover .certificate-image img{
 
-transform:scale(1.08);
+transform:scale(1.03);
 
 }
 
-/* ===========================
-    VERIFIED BADGE
-=========================== */
+/* ---------- VERIFIED ---------- */
 
 .verified-badge{
 
 position:absolute;
 
-top:18px;
+top:15px;
 
-right:18px;
+right:15px;
+
+padding:8px 16px;
+
+border-radius:30px;
 
 background:#22c55e;
 
 color:#fff;
 
-padding:8px 16px;
-
 font-size:13px;
 
 font-weight:600;
 
-border-radius:40px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.15);
-
 }
 
-/* ===========================
-        CONTENT
-=========================== */
+/* ---------- CONTENT ---------- */
 
 .certificate-content{
-
-padding:30px;
 
 display:flex;
 
 flex-direction:column;
 
-flex:1;
+justify-content:center;
 
 }
 
@@ -321,9 +305,9 @@ width:max-content;
 
 padding:8px 18px;
 
-border-radius:40px;
+border-radius:50px;
 
-background:rgba(37,99,235,.10);
+background:rgba(59,130,246,.12);
 
 color:var(--primary);
 
@@ -337,73 +321,71 @@ margin-bottom:18px;
 
 .certificate-content h3{
 
-font-size:28px;
+font-size:42px;
 
-margin-bottom:8px;
+margin-bottom:10px;
 
-line-height:1.3;
+line-height:1.2;
 
 }
 
 .certificate-content h4{
 
-font-size:18px;
+font-size:24px;
 
 color:var(--primary);
 
-margin-bottom:18px;
-
-font-weight:600;
+margin-bottom:20px;
 
 }
 
 .certificate-content p{
 
-font-size:16px;
+font-size:17px;
 
-line-height:30px;
+line-height:1.9;
 
 color:var(--text-light);
 
 margin-bottom:28px;
 
-flex:1;
-
 }
+/* ==========================================================
+            CERTIFICATES V2
+            PART 2
+========================================================== */
 
-/* ===========================
-        META
-=========================== */
+/* ---------- META ---------- */
 
 .certificate-meta{
 
 display:flex;
 
-justify-content:space-between;
+flex-wrap:wrap;
 
-align-items:center;
+gap:25px;
 
-margin-bottom:25px;
+margin-bottom:28px;
 
-padding-top:20px;
+padding-top:22px;
 
 border-top:1px solid var(--border);
 
-font-size:15px;
-
 color:var(--text-light);
+
+font-size:15px;
 
 }
 
-/* ===========================
-        BUTTONS
-=========================== */
+/* ---------- BUTTONS ---------- */
 
 .certificate-buttons{
 
 display:flex;
 
-gap:15px;
+gap:18px;
+
+margin-top:10px;
 
 }
 
@@ -411,15 +393,15 @@ gap:15px;
 
 flex:1;
 
+padding:15px 20px;
+
 text-align:center;
-
-padding:14px;
-
-border-radius:14px;
 
 text-decoration:none;
 
 font-weight:600;
+
+border-radius:14px;
 
 transition:.35s;
 
@@ -427,9 +409,11 @@ transition:.35s;
 
 .certificate-buttons a:first-child{
 
-background:var(--primary);
+background:linear-gradient(135deg,#3b82f6,#2563eb);
 
 color:#fff;
+
+box-shadow:0 15px 30px rgba(59,130,246,.25);
 
 }
 
@@ -441,86 +425,91 @@ transform:translateY(-4px);
 
 .certificate-buttons a:last-child{
 
-background:transparent;
-
 border:1px solid var(--border);
 
 color:var(--text);
+
+background:transparent;
 
 }
 
 .certificate-buttons a:last-child:hover{
 
+background:rgba(59,130,246,.08);
+
 border-color:var(--primary);
 
-background:rgba(37,99,235,.08);
-
-transform:translateY(-4px);
-
 }
-/* ==========================================================
-                CERTIFICATE
-                PART 3
-        JOURNEY • FOOTER • LIGHTBOX
-========================================================== */
 
-/* ===========================
-        LEARNING JOURNEY
-=========================== */
+/* ---------- LEARNING JOURNEY ---------- */
 
 .learning-journey{
 
-padding:40px 8% 120px;
+padding:20px 0 100px;
 
 }
 
 .journey-card{
 
-max-width:1000px;
+width:min(92%,1100px);
 
 margin:auto;
 
 padding:60px;
 
-border-radius:30px;
+text-align:center;
 
 background:var(--glass);
 
 border:1px solid var(--border);
 
+border-radius:30px;
+
 backdrop-filter:blur(18px);
 
 box-shadow:var(--shadow);
-
-text-align:center;
 
 }
 
 .journey-card h2{
 
-font-size:46px;
+font-size:42px;
 
-margin-bottom:25px;
+margin-bottom:20px;
 
 }
 
 .journey-card p{
 
-font-size:18px;
-
-line-height:34px;
-
-color:var(--text-light);
-
 max-width:760px;
 
 margin:auto;
 
+font-size:17px;
+
+line-height:1.9;
+
+color:var(--text-light);
+
 }
 
-/* ===========================
-        LIGHTBOX
-=========================== */
+/* ---------- FOOTER ---------- */
+
+footer{
+
+margin-top:80px;
+
+padding:35px 20px;
+
+border-top:1px solid var(--border);
+
+text-align:center;
+
+color:var(--text-light);
+
+}
+
+/* ---------- LIGHTBOX ---------- */
 
 .certificate-lightbox{
 
@@ -528,19 +517,19 @@ position:fixed;
 
 inset:0;
 
-background:rgba(0,0,0,.92);
-
 display:none;
 
 justify-content:center;
 
 align-items:center;
 
+background:rgba(0,0,0,.92);
+
+backdrop-filter:blur(8px);
+
 z-index:99999;
 
-padding:40px;
-
-backdrop-filter:blur(10px);
+padding:25px;
 
 }
 
@@ -552,15 +541,17 @@ display:flex;
 
 .certificate-lightbox img{
 
-max-width:92%;
+max-width:95%;
 
-max-height:90vh;
+max-height:92vh;
 
 border-radius:18px;
 
-box-shadow:0 20px 60px rgba(0,0,0,.45);
+background:#fff;
 
-animation:zoomIn .35s ease;
+padding:10px;
+
+animation:zoom .35s ease;
 
 }
 
@@ -568,9 +559,9 @@ animation:zoomIn .35s ease;
 
 position:absolute;
 
-top:30px;
+top:20px;
 
-right:35px;
+right:30px;
 
 font-size:42px;
 
@@ -584,13 +575,13 @@ transition:.3s;
 
 .close-lightbox:hover{
 
-transform:rotate(90deg);
-
 color:#60a5fa;
+
+transform:rotate(90deg);
 
 }
 
-@keyframes zoomIn{
+@keyframes zoom{
 
 from{
 
@@ -610,122 +601,201 @@ transform:scale(1);
 
 }
 
-/* ===========================
-        FLOAT ANIMATION
-=========================== */
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:992px){
 
 .certificate-card{
 
-animation:floatCard 5s ease-in-out infinite;
+grid-template-columns:1fr;
+
+padding:24px;
 
 }
 
-.certificate-card:nth-child(2){
+.certificate-content h3{
 
-animation-delay:.2s;
-
-}
-
-.certificate-card:nth-child(3){
-
-animation-delay:.4s;
+font-size:34px;
 
 }
 
-.certificate-card:nth-child(4){
+.certificate-stats{
 
-animation-delay:.6s;
-
-}
-
-.certificate-card:nth-child(5){
-
-animation-delay:.8s;
-
-}
-
-@keyframes floatCard{
-
-0%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-8px);
-
-}
-
-100%{
-
-transform:translateY(0);
+grid-template-columns:repeat(2,1fr);
 
 }
 
 }
 
-/* Hover ko priority */
+@media(max-width:768px){
 
-.certificate-card:hover{
+.certificate-hero{
 
-animation:none;
-
-}
-
-/* ===========================
-        FOOTER
-=========================== */
-
-footer{
-
-padding:45px 8%;
-
-border-top:1px solid var(--border);
-
-background:var(--glass);
-
-backdrop-filter:blur(18px);
+padding:120px 20px 70px;
 
 }
 
-footer p{
+.certificate-grid{
 
-text-align:center;
+width:94%;
+
+gap:30px;
+
+}
+
+.certificate-card{
+
+padding:18px;
+
+border-radius:22px;
+
+}
+
+.certificate-image{
+
+padding:10px;
+
+}
+
+.certificate-content h3{
+
+font-size:30px;
+
+}
+
+.certificate-content h4{
+
+font-size:21px;
+
+}
+
+.certificate-content p{
 
 font-size:16px;
 
-color:var(--text-light);
+line-height:1.8;
 
 }
 
-/* ===========================
-        SCROLLBAR
-=========================== */
+.certificate-buttons{
 
-.certificate-lightbox::-webkit-scrollbar{
-
-width:8px;
+flex-direction:column;
 
 }
 
-.certificate-lightbox::-webkit-scrollbar-thumb{
+.certificate-stats{
 
-background:var(--primary);
-
-border-radius:20px;
+grid-template-columns:1fr;
 
 }
 
-/* ===========================
-        SELECTION
-=========================== */
+.journey-card{
 
-::selection{
+padding:35px 22px;
 
-background:rgba(37,99,235,.25);
+}
 
-color:inherit;
+.journey-card h2{
+
+font-size:30px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.certificate-content h3{
+
+font-size:26px;
+
+}
+
+.hero-badge{
+
+font-size:13px;
+
+}
+
+.certificate-hero p{
+
+font-size:16px;
+
+}
+
+.section-heading h2{
+
+font-size:30px;
+
+}
+
+.section-heading p{
+
+font-size:15px;
+
+}
+
+}
+/* ==========================================
+        LIGHTBOX V2
+========================================== */
+
+.lightbox-footer{
+
+position:absolute;
+
+bottom:30px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+text-align:center;
+
+color:#fff;
+
+}
+
+.lightbox-footer h3{
+
+font-size:24px;
+
+margin-bottom:8px;
+
+}
+
+.lightbox-footer p{
+
+opacity:.8;
+
+font-size:15px;
+
+}
+
+.close-lightbox{
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(20px);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.close-lightbox i{
+
+font-size:24px;
 
 }

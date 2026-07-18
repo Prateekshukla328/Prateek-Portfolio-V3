@@ -44,6 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             previewImage.alt = image.alt;
 
+            document.getElementById("certificate-title").innerText =
+image.alt;
+
             lightbox.classList.add("active");
 
             body.style.overflow = "hidden";
