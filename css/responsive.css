@@ -835,3 +835,20 @@ overflow-x:hidden;
 /* ==========================================
         END
 ========================================== */
+@media(max-width:768px){
+
+.article-actions{
+
+flex-direction:column;
+
+}
+
+.article-actions button{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}
