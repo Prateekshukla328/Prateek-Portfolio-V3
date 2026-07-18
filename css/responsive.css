@@ -852,3 +852,230 @@ justify-content:center;
 }
 
 }
+/* ==========================================================
+                CERTIFICATE RESPONSIVE
+========================================================== */
+
+@media (max-width:1200px){
+
+.certificate-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:992px){
+
+.certificate-hero{
+
+padding:140px 6% 80px;
+
+}
+
+.certificate-hero h1{
+
+font-size:52px;
+
+}
+
+.certificate-stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.certificate-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.journey-card{
+
+padding:45px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.certificate-hero{
+
+padding:120px 20px 70px;
+
+}
+
+.certificate-hero h1{
+
+font-size:38px;
+
+}
+
+.certificate-hero p{
+
+font-size:17px;
+
+line-height:30px;
+
+}
+
+.certificate-gallery{
+
+padding:0 20px 70px;
+
+}
+
+.section-heading h2{
+
+font-size:34px;
+
+}
+
+.section-heading p{
+
+font-size:16px;
+
+line-height:30px;
+
+}
+
+.certificate-stats{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.certificate-card{
+
+border-radius:22px;
+
+}
+
+.certificate-image{
+
+height:220px;
+
+}
+
+.certificate-content{
+
+padding:24px;
+
+}
+
+.certificate-content h3{
+
+font-size:24px;
+
+}
+
+.certificate-content p{
+
+font-size:15px;
+
+line-height:28px;
+
+}
+
+.certificate-meta{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:10px;
+
+}
+
+.certificate-buttons{
+
+flex-direction:column;
+
+}
+
+.certificate-buttons a{
+
+width:100%;
+
+}
+
+.journey-card{
+
+padding:30px;
+
+}
+
+.journey-card h2{
+
+font-size:32px;
+
+}
+
+.journey-card p{
+
+font-size:16px;
+
+line-height:30px;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.certificate-hero h1{
+
+font-size:30px;
+
+}
+
+.hero-badge{
+
+font-size:13px;
+
+padding:8px 18px;
+
+}
+
+.certificate-image{
+
+height:190px;
+
+}
+
+.certificate-content{
+
+padding:20px;
+
+}
+
+.certificate-content h3{
+
+font-size:22px;
+
+}
+
+.section-heading h2{
+
+font-size:28px;
+
+}
+
+.journey-card{
+
+padding:24px;
+
+}
+
+.journey-card h2{
+
+font-size:26px;
+
+}
+
+}

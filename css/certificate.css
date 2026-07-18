@@ -1,0 +1,731 @@
+/* ==========================================================
+                    CERTIFICATES
+                    PART 1
+========================================================== */
+
+/* ===========================
+        HERO
+=========================== */
+
+.certificate-hero{
+
+padding:170px 8% 110px;
+
+text-align:center;
+
+}
+
+.certificate-hero .container{
+
+max-width:1100px;
+
+margin:auto;
+
+}
+
+.hero-badge{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:10px 24px;
+
+border-radius:50px;
+
+background:rgba(37,99,235,.10);
+
+border:1px solid var(--border);
+
+color:var(--primary);
+
+font-weight:600;
+
+margin-bottom:28px;
+
+}
+
+.certificate-hero h1{
+
+font-size:68px;
+
+font-weight:800;
+
+letter-spacing:-2px;
+
+margin-bottom:25px;
+
+line-height:1.1;
+
+}
+
+.certificate-hero p{
+
+max-width:760px;
+
+margin:auto;
+
+font-size:20px;
+
+line-height:36px;
+
+color:var(--text-light);
+
+}
+
+/* ===========================
+      STATS
+=========================== */
+
+.certificate-stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+margin-top:70px;
+
+}
+
+.certificate-stats div{
+
+padding:30px;
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:24px;
+
+backdrop-filter:blur(18px);
+
+transition:.35s;
+
+box-shadow:var(--shadow);
+
+}
+
+.certificate-stats div:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--primary);
+
+}
+
+.certificate-stats h2{
+
+font-size:36px;
+
+color:var(--primary);
+
+margin-bottom:10px;
+
+}
+
+.certificate-stats p{
+
+font-size:15px;
+
+color:var(--text-light);
+
+margin:0;
+
+}
+
+/* ===========================
+      SECTION TITLE
+=========================== */
+
+.certificate-gallery{
+
+padding:30px 8% 100px;
+
+}
+
+.section-heading{
+
+text-align:center;
+
+max-width:850px;
+
+margin:auto auto 70px;
+
+}
+
+.section-heading h2{
+
+font-size:52px;
+
+margin-bottom:20px;
+
+}
+
+.section-heading p{
+
+font-size:18px;
+
+line-height:34px;
+
+color:var(--text-light);
+
+}
+/* ==========================================================
+                CERTIFICATE CARDS
+                    PART 2
+========================================================== */
+
+/* ===========================
+        GRID
+=========================== */
+
+.certificate-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+
+gap:35px;
+
+align-items:stretch;
+
+}
+
+/* ===========================
+        CARD
+=========================== */
+
+.certificate-card{
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:28px;
+
+overflow:hidden;
+
+backdrop-filter:blur(18px);
+
+box-shadow:var(--shadow);
+
+transition:.4s;
+
+display:flex;
+
+flex-direction:column;
+
+height:100%;
+
+}
+
+.certificate-card:hover{
+
+transform:translateY(-12px);
+
+border-color:var(--primary);
+
+box-shadow:0 25px 60px rgba(37,99,235,.15);
+
+}
+
+/* ===========================
+        IMAGE
+=========================== */
+
+.certificate-image{
+
+position:relative;
+
+overflow:hidden;
+
+height:260px;
+
+background:#f5f7fb;
+
+}
+
+.certificate-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+cursor:pointer;
+
+}
+
+.certificate-card:hover .certificate-image img{
+
+transform:scale(1.08);
+
+}
+
+/* ===========================
+    VERIFIED BADGE
+=========================== */
+
+.verified-badge{
+
+position:absolute;
+
+top:18px;
+
+right:18px;
+
+background:#22c55e;
+
+color:#fff;
+
+padding:8px 16px;
+
+font-size:13px;
+
+font-weight:600;
+
+border-radius:40px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+        CONTENT
+=========================== */
+
+.certificate-content{
+
+padding:30px;
+
+display:flex;
+
+flex-direction:column;
+
+flex:1;
+
+}
+
+.certificate-category{
+
+display:inline-block;
+
+width:max-content;
+
+padding:8px 18px;
+
+border-radius:40px;
+
+background:rgba(37,99,235,.10);
+
+color:var(--primary);
+
+font-size:14px;
+
+font-weight:600;
+
+margin-bottom:18px;
+
+}
+
+.certificate-content h3{
+
+font-size:28px;
+
+margin-bottom:8px;
+
+line-height:1.3;
+
+}
+
+.certificate-content h4{
+
+font-size:18px;
+
+color:var(--primary);
+
+margin-bottom:18px;
+
+font-weight:600;
+
+}
+
+.certificate-content p{
+
+font-size:16px;
+
+line-height:30px;
+
+color:var(--text-light);
+
+margin-bottom:28px;
+
+flex:1;
+
+}
+
+/* ===========================
+        META
+=========================== */
+
+.certificate-meta{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:25px;
+
+padding-top:20px;
+
+border-top:1px solid var(--border);
+
+font-size:15px;
+
+color:var(--text-light);
+
+}
+
+/* ===========================
+        BUTTONS
+=========================== */
+
+.certificate-buttons{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.certificate-buttons a{
+
+flex:1;
+
+text-align:center;
+
+padding:14px;
+
+border-radius:14px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.certificate-buttons a:first-child{
+
+background:var(--primary);
+
+color:#fff;
+
+}
+
+.certificate-buttons a:first-child:hover{
+
+transform:translateY(-4px);
+
+}
+
+.certificate-buttons a:last-child{
+
+background:transparent;
+
+border:1px solid var(--border);
+
+color:var(--text);
+
+}
+
+.certificate-buttons a:last-child:hover{
+
+border-color:var(--primary);
+
+background:rgba(37,99,235,.08);
+
+transform:translateY(-4px);
+
+}
+/* ==========================================================
+                CERTIFICATE
+                PART 3
+        JOURNEY • FOOTER • LIGHTBOX
+========================================================== */
+
+/* ===========================
+        LEARNING JOURNEY
+=========================== */
+
+.learning-journey{
+
+padding:40px 8% 120px;
+
+}
+
+.journey-card{
+
+max-width:1000px;
+
+margin:auto;
+
+padding:60px;
+
+border-radius:30px;
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+backdrop-filter:blur(18px);
+
+box-shadow:var(--shadow);
+
+text-align:center;
+
+}
+
+.journey-card h2{
+
+font-size:46px;
+
+margin-bottom:25px;
+
+}
+
+.journey-card p{
+
+font-size:18px;
+
+line-height:34px;
+
+color:var(--text-light);
+
+max-width:760px;
+
+margin:auto;
+
+}
+
+/* ===========================
+        LIGHTBOX
+=========================== */
+
+.certificate-lightbox{
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.92);
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+padding:40px;
+
+backdrop-filter:blur(10px);
+
+}
+
+.certificate-lightbox.active{
+
+display:flex;
+
+}
+
+.certificate-lightbox img{
+
+max-width:92%;
+
+max-height:90vh;
+
+border-radius:18px;
+
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+
+animation:zoomIn .35s ease;
+
+}
+
+.close-lightbox{
+
+position:absolute;
+
+top:30px;
+
+right:35px;
+
+font-size:42px;
+
+color:#fff;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.close-lightbox:hover{
+
+transform:rotate(90deg);
+
+color:#60a5fa;
+
+}
+
+@keyframes zoomIn{
+
+from{
+
+opacity:0;
+
+transform:scale(.85);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+/* ===========================
+        FLOAT ANIMATION
+=========================== */
+
+.certificate-card{
+
+animation:floatCard 5s ease-in-out infinite;
+
+}
+
+.certificate-card:nth-child(2){
+
+animation-delay:.2s;
+
+}
+
+.certificate-card:nth-child(3){
+
+animation-delay:.4s;
+
+}
+
+.certificate-card:nth-child(4){
+
+animation-delay:.6s;
+
+}
+
+.certificate-card:nth-child(5){
+
+animation-delay:.8s;
+
+}
+
+@keyframes floatCard{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Hover ko priority */
+
+.certificate-card:hover{
+
+animation:none;
+
+}
+
+/* ===========================
+        FOOTER
+=========================== */
+
+footer{
+
+padding:45px 8%;
+
+border-top:1px solid var(--border);
+
+background:var(--glass);
+
+backdrop-filter:blur(18px);
+
+}
+
+footer p{
+
+text-align:center;
+
+font-size:16px;
+
+color:var(--text-light);
+
+}
+
+/* ===========================
+        SCROLLBAR
+=========================== */
+
+.certificate-lightbox::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+.certificate-lightbox::-webkit-scrollbar-thumb{
+
+background:var(--primary);
+
+border-radius:20px;
+
+}
+
+/* ===========================
+        SELECTION
+=========================== */
+
+::selection{
+
+background:rgba(37,99,235,.25);
+
+color:inherit;
+
+}
